@@ -136,12 +136,18 @@ p {
   header {
     background-image: none;
     background-image: url(../img/desktop-image-hero-1.jpg);
-
+    width: 200%;
   }
 
   #header {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #discover {
+    width: 39%;
   }
 
   #footer {
@@ -149,5 +155,16 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  #imagemain1,
+  #about,
+  #light {
+    width: 33%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
   }
 }
