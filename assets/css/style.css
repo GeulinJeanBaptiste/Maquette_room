@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(//assets/font/LeagueSpartan-VariableFont_wght.ttf)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "LeagueSpartan", sans-serif;
+}
+
+header {
+  background-image: url(../img/mobile-image-hero-1.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 60vh;
+  max-width: 100%;
+  position: relative;
+}
+
+#angle {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  right: 0;
+  border: 1rem solid black;
+  background-color: black;
+  width: 18%;
+}
+
+#navheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 2.5rem;
+  width: 50%;
+}
+
+#check:checked~ul {
+  display: flex;
+}
+
+#check {
+  display: none;
+  color: white;
+}
+
+#burger {
+  color: white;
+}
+
+#bandeau {
+  position: relative;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+li {
+  color: white;
+  padding: 16px;
+
+}
+
+/* Si j'apelle les img directement je peut les modifier en width 100% */
+img {
+  width: 100%;
+}
+
+#arrow {
+  width: 10%;
+  height: 10%;
+}
+
+#discover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  margin: 2rem;
+  /* background-color: rgba(237, 238, 238, 0.747); */
+}
+
+/* Si j'apelle la div "#imagemain1" et je la met en width 100% cela ne marche pas. */
+/* #imagemain1 {
+  width: 100%;
+} */
+h1 {
+  color: white;
+}
+
+h3 {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: normal;
+}
+
+.shopnow {
+  display: flex;
+  align-items: center;
+}
+
+h2,
+h3,
+p {
+  padding: 1rem;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+@media screen and (min-width: 1024px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  header {
+    background-image: none;
+    background-image: url(../img/desktop-image-hero-1.jpg);
+
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
